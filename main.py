@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord import app_commands
 
 from server import server_on
-
+TOKEN ='MTQ3MjE2MDE3MTMzNjY2NzE0Nw.GxzP4C.eRr1RY5nv4kMawnEoW7DAevrD16VMifujvjios'
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 
@@ -114,5 +114,6 @@ async def helpcommand(interaction):
 
 
 server_on()
+
 
 bot.run(os.getenv('TOKEN'))
