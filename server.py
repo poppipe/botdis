@@ -5,8 +5,9 @@ app = Flask('')
 def home():
     return "Sever is running!"
 def run():
-    app.run(host='0.0.0.0',post=8080)
+    app.run(host='0.0.0.0',port=8080)
 def server_on():
     t=Thread(target=run)
 
     t.start
+
